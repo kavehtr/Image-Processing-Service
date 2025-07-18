@@ -4,3 +4,12 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+axum = "0.7"
+tokio = { version = "1", features = ["full"] }
+image = "0.24"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+mime = "0.3"
+
+# For multipart/form-data support
+axum-extra = { version = "0.9", features = ["multipart"] }
